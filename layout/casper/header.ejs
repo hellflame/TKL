@@ -9,16 +9,6 @@
             <li><a href="<%- config.root %>" class="animsition-link" title="Home">Home</a></li>
             <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">archives</a></li>
             <!-- Dropdown Menu -->
-			 <% if (theme.works && theme.works.length){ %>
-            <li>
-                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
-                <ul class="sb-submenu">
-                    <% theme.works.forEach(function(item){ %>
-                        <li><a href="<%- item.works_url %>" target="_BLANK" class="animsition-link"><%= item.works_name %></a></li>
-                    <% }); %>
-                </ul>
-            </li>
-            <% } %>
             <% if (site.categories.length){ %>
         	<li>
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
@@ -29,6 +19,16 @@
 				</ul>
         	</li>
 			<% } %>
+			 <% if (theme.works && theme.works.length){ %>
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    <% theme.works.forEach(function(item){ %>
+                        <li><a href="<%- item.works_url %>" target="_BLANK" class="animsition-link"><%= item.works_name %></a></li>
+                    <% }); %>
+                </ul>
+            </li>
+            <% } %>
             <% if (theme.links && theme.links.length){ %>
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>

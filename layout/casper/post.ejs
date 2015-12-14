@@ -19,6 +19,19 @@
 
 <script>
     window.onload = function(){
-        $('html,body').animate({scrollTop: window.screen.height * 0.8}, 800);
+        var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                        "SymbianOS", "Windows Phone",
+                        "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        if(flag){
+            $('html,body').animate({scrollTop: window.screen.height * 0.8}, 800);
+        }
     }
 </script>
