@@ -83,3 +83,5 @@ Content
 ###Others
 If you like this theme, [Fork](https://github.com/SuperKieran/TKL/fork) && Star.
 Come on.
+
+copy config.example to _config.yml as your own config
