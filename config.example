@@ -14,15 +14,15 @@ highlightjs: vs
 
 #Works
 works:
-- works_name: future
-  works_url: http://www.future.org.cn/
-- works_name: video
-  works_url: http://video.future.org.cn/
-- works_name: whu-know
-  works_url: http://hellflame.github.io/#coming-soon
+- works_name: a
+  works_url: http://www.baidu.com/
+- works_name: b
+  works_url: http://www.baidu.com/
+- works_name: c
+  works_url: http://www.baidu.com/
 
 #duoshuo name
-duoshuo: hellflame-things
+duoshuo: duoshuo-short-name
 
 # Miscellaneous
 github: https://github.com/hellflame
@@ -44,5 +44,5 @@ timeline:
 links:
 - name: Kieran
   link: http://go.kieran.top/
-- name: idbord
-  link: http://www.idbord.com
+- name: name
+  link: /
