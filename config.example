@@ -24,6 +24,10 @@ works:
 #duoshuo name
 duoshuo: duoshuo-short-name
 
+#CNZZ
+cn_id:
+web_id:
+
 # Miscellaneous
 github: https://github.com/hellflame
 google: https://plus.google.com/110996248749680506305
