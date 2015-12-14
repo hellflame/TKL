@@ -1,14 +1,30 @@
 <% if (theme.duoshuo){ %>
 <div class="ds-thread" data-thread-key="<%= page.path %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"<%= theme.duoshuo %>"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
+	var duoshuoQuery = {short_name:"<%= theme.duoshuo %>"};
+	var question = function(){
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0]
+	 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		};
+    var UA = navigator.userAgent;
+    var AG = ["Android", "iPhone",
+        "SymbianOS", "Windows Phone",
+        "iPod"];
+    var FG = true;
+    for (var v = 0; v < AG.length; v++) {
+        if (UA.indexOf(AG[v]) > 0) {
+            FG = false;
+            break;
+        }
+    }
+    if(FG) {
+        question();
+    }
 </script>
 <% } %>
