@@ -31,9 +31,12 @@
                 }
             }
         if(flag){
-            $('html,body').animate({scrollTop: window.screen.height * 0.8}, 800);
+            var expect_height = $('#intro').offset().top / 2 - $('#hero h2').height() - $('#hero p').height() - 20;
+            $('html,body').animate({scrollTop: expect_height}, 800);
         }else {
-            $('html,body').animate({scrollTop: window.screen.height}, 1000);
+            setTimeout(function(){
+                $('html,body').animate({scrollTop: window.screen.height}, 2000);
+            }, 1000)
         }
     }
 </script>
