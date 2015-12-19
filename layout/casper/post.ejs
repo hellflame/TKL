@@ -35,7 +35,7 @@
             $('html,body').animate({scrollTop: expect_height}, 800);
         }else {
             setTimeout(function(){
-                $('html,body').animate({scrollTop: window.screen.height}, 2000);
+                $('html,body').animate({scrollTop: $('.herofade').height()}, 2000);
             }, 1000)
         }
     }
