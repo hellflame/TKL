@@ -1,64 +1,75 @@
 # TKL
-TKL is a responsive design theme for Hexo.
-[Demo| Kieran's Blog](http://go.kieran.top/post/14/)
+
+this theme is forked from [Kieran](https://github.com/SuperKieran/TKL)
+bug I just adjust a lot to it for my personal needs
+
 ###Install
 Execute the following command and modify theme in <code>_config.yml</code> to <code>TKL</code>.
 ```
-git clone https://github.com/SuperKieran/TKL.git
+git clone https://github.com/hellflame/TKL.git
 ```
+
+copy `config.example` to `_config.yml` as your own config
+
 <!--more-->
 ###Update
+
 Execute the following command to update TKL.
 ``` 
 cd themes/TKL
 git pull
 ```
+
 ###Config
 ####Theme_config.yml
 ```
-cover: /img/bg_img.jpg
+cover: /img/20.jpg
 logo: /img/logo.png
 top_saying:
-- title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
-- content: 每一个不曾起舞的日子都是对生命的辜负。
-bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话比较和谐。
-  
+- title: YOU MAY <span>REGRET</span>, BUT WHAT DOES IT MATTER
+- content: 未来是否曾经一成不变
+bottom_saying: THERE IS A NEW DAY COMING
 excerpt_link: Read More
-  
+
 rss: /atom.xml
-  
+
 highlightjs: vs
 
 works:
-- works_name: XXX1
-  works_url: /
-- works_name: XXX2
-  works_url: /
-  
-duoshuo: duoshuo_name
-  
-github: https://github.com/
-twitter: https://twitter.com/
-facebook: https://www.facebook.com/
-google:  https://google.com/
-weibo: http://weibo.com/
-  
+- works_name: a
+  works_url: http://www.baidu.com/
+- works_name: b
+  works_url: http://www.baidu.com/
+- works_name: c
+  works_url: http://www.baidu.com/
+
+duoshuo: duoshuo-short-name
+
+cn_id:
+web_id:
+
+github: https://github.com/hellflame
+google: https://plus.google.com/110996248749680506305
+
+
 timeline:
 - num: 1
-  word: 2014/06/12-Start xxx
+  word: 2014/06/12 Start aaa
 - num: 2
-  word: 2014/11/29-Start bbb
+  word: 2014/11/29 Start bbb
 - num: 3
-  word: 2015/02/18-Start ddd
+  word: 2015/02/18 Start ccc
 - num: 4
-  word: ...
-  
+  word: ~~~
+
 links:
 - name: Kieran
   link: http://go.kieran.top/
-- name: Name
-  link: http://domain.com/
+- name: name
+  link: /
+
 ```
+
 ####Hexo_config.yml
 change some code to enable archives page
 ```
@@ -69,6 +80,7 @@ change some code to enable archives page
 archive: 1
 category: 1
 tag: 1
+
 ```
 ###Icon
 Seclet icon which you like in<code>\TKL\source\css\iconList.css</code>  
@@ -81,7 +93,9 @@ Show
 Content
 ![](http://kieran-hexo.qiniudn.com/hexo_14_4.png)
 ###Others
-If you like this theme, [Fork](https://github.com/SuperKieran/TKL/fork) && Star.
+
+If you like this theme, Fork && Star.
 Come on.
 
-copy config.example to _config.yml as your own config
+original [Fork](https://github.com/SuperKieran/TKL/fork)
+current [Fork](https://github.com/hellflame/TKL/fork)
