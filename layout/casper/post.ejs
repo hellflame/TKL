@@ -1,4 +1,4 @@
-<% permalink = config.url + config.root + post.path %>
+<% permalink = config.url + config.root + post.path;%>
 <section id="intro">
     <div class="container">
         <div class="row col-md-offset-2">
@@ -16,9 +16,24 @@
         <div class="duoshuo"><%- partial('post/duoshuo') %></div>
     </div>
 </section>
-
 <script>
     window.onload = function(){
+        var target = $('.col-md-offset-2 img');
+        for(var i=0; i < target.length; i ++){
+            var temp = $(target[i]);
+            var alt = temp.attr("alt") || "<%- post.title %>";
+            var src = temp.attr("src");
+            if($(temp.parent()).prop("tagName") == 'P'){
+                $(temp.parent()).css("text-indent", 0);
+            }
+            var error_page = "<%- config.root %>img/error_" + Math.floor(Math.random() * 10) % 2 + ".png";
+            temp.replaceWith("<a href='"+ src +"' " +
+                    "data-lightbox='<%- post.title %>' " +
+                    "data-title='" + alt + "' title='" + alt + "'>" +
+                    "<img src='" + src +
+                    "' alt='"+ alt +"' onerror=\"this.src='" + error_page + "'\" >" +
+                    "</a>");
+        }
         var userAgentInfo = navigator.userAgent;
             var Agents = ["Android", "iPhone",
                         "SymbianOS", "Windows Phone",
@@ -38,5 +53,5 @@
                 $('html,body').animate({scrollTop: $('.herofade').height()}, 2000);
             }, 1000)
         }
-    }
+    };
 </script>
