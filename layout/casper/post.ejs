@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<%- post.content %>
+      		<%- post.content.replace(/src/gi, 'data-src') %>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
@@ -18,22 +18,22 @@
 </section>
 <script>
     window.onload = function(){
-        var target = $('.col-md-offset-2 img');
-        for(var i=0; i < target.length; i ++){
-            var temp = $(target[i]);
-            var alt = temp.attr("alt") || "<%- post.title %>";
-            var src = temp.attr("src");
-            if($(temp.parent()).prop("tagName") == 'P'){
-                $(temp.parent()).css("text-indent", 0);
-            }
-            var error_page = "<%- config.root %>img/error_" + Math.floor(Math.random() * 10) % 2 + ".png";
-            temp.replaceWith("<a href='"+ src +"' " +
-                    "data-lightbox='<%- post.title %>' " +
-                    "data-title='" + alt + "' title='" + alt + "'>" +
-                    "<img src='" + src +
-                    "' alt='"+ alt +"' onerror=\"this.src='" + error_page + "'\" >" +
-                    "</a>");
-        }
+        (function(){
+            var target = $('.col-md-offset-2 img');
+            for(var i=0; i < target.length; i ++){
+                var temp = $(target[i]);
+                var alt = temp.attr("alt") || "<%- post.title %>";
+                var src = temp.attr("data-src");
+                if($(temp.parent()).prop("tagName") == 'P'){
+                    $(temp.parent()).css("text-indent", 0);
+                }
+                var error_page = "<%- config.root %>img/error_" + Math.floor(Math.random() * 10) % 2 + ".png";
+                temp.replaceWith("<a href='"+ src +"' " +
+                        "data-lightbox='<%- post.title %>' " +
+                        "data-title='" + alt + "' title='" + alt + "'>" +
+                        "<img src='" + src +
+                        "' alt='"+ alt +"' onerror=\"this.src='" + error_page + "'\" >" + "</a>");
+            }})();
         var userAgentInfo = navigator.userAgent;
             var Agents = ["Android", "iPhone",
                         "SymbianOS", "Windows Phone",

@@ -11,7 +11,13 @@
 			(document.getElementsByTagName('head')[0]
 	 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 		})();
-		};
+        setTimeout(function () {
+            var images = $(".duoshuo img");
+            for(var i=0; i< images.length; i ++){
+                images.attr("src", images.attr("src").replace(/http:\/\//gi, 'https://'))
+            }
+        }, 2000);
+    };
     var UA = navigator.userAgent;
     var AG = ["Android", "iPhone",
         "SymbianOS", "Windows Phone",
