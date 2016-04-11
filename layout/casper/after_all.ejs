@@ -2,7 +2,9 @@
         
 <!-- Resizable 'on-demand' full-height hero -->
 <script type="text/javascript">
-    
+    (function () {
+        $("#hero-cover").css('background', 'url(<%- theme.cover %>) no-repeat center center fixed');
+    })();
     var resizeHero = function () {
         var hero = $(".cover,.heightblock"),
             window1 = $(window);

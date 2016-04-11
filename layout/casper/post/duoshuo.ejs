@@ -14,7 +14,9 @@
         setTimeout(function () {
             var images = $(".duoshuo img");
             for(var i=0; i< images.length; i ++){
-                images.attr("src", images.attr("src").replace(/http:\/\//gi, 'https://'))
+                var target = $(images[i]);
+                var src = target.attr('src').replace(/http:\/\//gi, 'https://');
+                target.attr("src", src);
             }
         }, 2000);
     };

@@ -4,3 +4,11 @@
 .highlight{
     border: none !important;
 }
+
+.special-for-spider{
+    display: none;
+}
+
+#hero-cover{
+    background-size: cover !important;
+}
