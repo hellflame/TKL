@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-size: 0;
+  overflow: hidden;
+}
+
+#wrapper {
+  background: url('../images/space.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  -webkit-animation: orbit 300s linear infinite;
+  -moz-animation: orbit 300s linear infinite;
+  -ms-animation: orbit 300s linear infinite;
+  -o-animation: orbit 300s linear infinite;
+  animation: orbit 300s linear infinite;
+  overflow: visible;
+}
+
+#cover{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 0;
+  overflow: hidden;
+}
+
+canvas {
+  overflow: hidden;
+}
+
+#cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  margin-top: -57px;
+  margin-left: -200px;
+  font-family: sans-serif;
+  z-index: 0;
+}
+#cta a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-shadow: rgba(200, 200, 255, 0.9) 0 0 10px;
+}
+#cta h1 {
+  font-weight: 300;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+#cta h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+
+
+
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-180deg) translate(500em, -500em);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg) translate(0, 0);
+  }
+}
+
+@-moz-keyframes orbit {
+  0% {
+    -moz-transform: rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    -moz-transform: rotate(-180deg) translate(500em, -500em);
+  }
+
+  100% {
+    -moz-transform: rotate(-360deg) translate(0, 0);
+  }
+}
+
+@-ms-keyframes orbit {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    -ms-transform: rotate(-180deg) translate(500em, -500em);
+  }
+
+  100% {
+    -ms-transform: rotate(-360deg) translate(0, 0);
+  }
+}
+
+@-o-keyframes orbit {
+  0% {
+    -o-transform: rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    -o-transform: rotate(-180deg) translate(500em, -500em);
+  }
+
+  100% {
+    -o-transform: rotate(-360deg) translate(0, 0);
+  }
+}
