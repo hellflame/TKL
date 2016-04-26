@@ -107,6 +107,7 @@ canvas {
   margin-left: -200px;
   font-family: sans-serif;
   z-index: 0;
+  display: none;
 }
 #cta a {
   text-align: center;

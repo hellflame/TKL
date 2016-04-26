@@ -29,7 +29,7 @@ var star_color_ratio=0;
 var star_x_save,star_y_save;
 var star_ratio=256;
 var star_speed=1;
-var star_speed_save=0;
+//var star_speed_save=0;
 var star=new Array(n);
 var color;
 var opacity=0.1;
@@ -41,19 +41,19 @@ var mouse_y=0;
 
 var canvas_x=0;
 var canvas_y=0;
-var canvas_w=0;
-var canvas_h=0;
+//var canvas_w=0;
+//var canvas_h=0;
 var context;
 
 var key;
-var ctrl;
+//var ctrl;
 
 var timeout;
 var fps=12;
 
 function init()
     {
-    var a=0;
+    //var a=0;
     for(var i=0;i<n;i++)
         {
         star[i]=new Array(5);
@@ -70,7 +70,7 @@ function init()
     context=starfield.getContext('2d');
     // context.lineCap='round';
     context.fillStyle='rgb(0,0,0)';
-    context.fillStyle='rgba(0,0,0,'+opacity+')'
+    context.fillStyle='rgba(0,0,0,'+opacity+')';
     context.strokeStyle='rgb(255,255,255)';
     }
 
@@ -132,7 +132,6 @@ document.body.addEventListener('touchmove', function (event) {
 }, false);
 
 $(document).ready(function() {
-
     $(window)
         .resize(function() {
             resize();
@@ -140,18 +139,8 @@ $(document).ready(function() {
         .bind('orientationchange', function() {
             resize();
         });
-    var cta = $('#cta');
-    cta.doShow = function() {
-      cta.fadeIn(2000);
-    };
-    cta.doHide = function() {
-      cta.hide();
-    };
-    cta.isVisible = function() {
-      return cta.is(':visible');
-    };
-    $.doTimeout(3000, function() {
-        cta.doShow();
+    $.doTimeout(1000, function() {
+        $('#cta').fadeIn(2000);
     });
     start();
 });
