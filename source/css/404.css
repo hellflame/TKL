@@ -105,7 +105,7 @@ canvas {
   width: 400px;
   margin-top: -57px;
   margin-left: -200px;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   z-index: 0;
   display: none;
 }
@@ -120,6 +120,7 @@ canvas {
   font-size: 80px;
   text-transform: uppercase;
   line-height: 90px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 #cta h2 {
   font-weight: 900;
@@ -127,6 +128,7 @@ canvas {
   line-height: 25px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 
 
