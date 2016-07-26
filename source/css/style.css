@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-family: "Comic Sans MS", "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 .pace {
 	-webkit-pointer-events: none;
@@ -144,7 +144,7 @@ a:focus,
 a:visited,
 a:link {
 	color: #1d8acb;
-	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+	font-family: "Comic Sans MS", "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-weight: 800;
 	text-decoration: none;
 }
@@ -349,7 +349,7 @@ a.custom-button span {
 	-moz-border-radius: 0;
 	border-radius: 0;
 	font-size: 14px;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-family: "Comic Sans MS", "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-weight: 700;
 	padding: 8px 18px;
 	font-weight: 600;
@@ -3329,6 +3329,7 @@ footer .footer_bottom {
 }
 #intro .col-md-8.col-md-offset-2 img {
 	max-width: 100%;
+	max-height: 500px;
 }
 /* Import the font file with the icons in it */
 @font-face { font-family: 'icons'; src:  url('../fonts/icons.woff') format('woff'); font-weight: normal; font-style: normal; }
